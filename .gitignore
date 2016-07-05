@@ -1,0 +1,4 @@
+config.json
+node_modules
+public/pictures/
+bower_components

@@ -1,0 +1,42 @@
+.controls {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: $bottom-bar-height;
+  text-align: center;
+  font-size: 2rem;
+  color: $medium-gray;
+  background: linear-gradient(to top, $bar-color , rgba(0, 0, 0, 0));
+
+  @include breakpoint(medium down) {
+    font-size: 1.5rem;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $white;
+    }
+
+    &--disabled {
+      color: $black;
+    }
+  }
+
+  &__progress {
+    cursor: pointer;
+  }
+
+  &__volume-percent {
+    font-size: 0.5em;
+    line-height: 2.1em;
+    vertical-align: text-bottom;
+    color: $dark-gray;
+    pointer-events: none;
+  }
+
+}
