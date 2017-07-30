@@ -28,22 +28,22 @@ class Matrix extends React.Component {
   }
 
   alignMatrix() {
-    $('.matrix').css({
-      'padding-top': ($(window).innerHeight() - this.props.size) / 2,
-      'padding-left': ($(window).width() - this.props.size) / 2
+    window.jQuery('.matrix').css({
+      'padding-top': (window.jQuery(window).innerHeight() - this.props.size) / 2,
+      'padding-left': (window.jQuery(window).width() - this.props.size) / 2
     })
   }
 
   animate() {
     this.columns.forEach((row, column) => {
       if (column !== this.column) {
-        $('.matrix__column').eq(column).stop(true).css({'margin-top': - this.props.size * row})
+        window.jQuery('.matrix__column').eq(column).stop(true).css({'margin-top': - this.props.size * row})
       }
     })
-    $('.matrix__column').eq(this.column).stop(true).animate({'margin-top': - this.props.size * this.columns[this.column]})
-    $('.matrix').stop(true).animate({'margin-left': - this.props.size * this.column})
-    $('.picture--selected').removeClass('picture--selected')
-    $('.matrix__column').eq(this.column).find('.matrix__row').eq(this.columns[this.column]).find('.picture').addClass('picture--selected').focus()
+    window.jQuery('.matrix__column').eq(this.column).stop(true).animate({'margin-top': - this.props.size * this.columns[this.column]})
+    window.jQuery('.matrix').stop(true).animate({'margin-left': - this.props.size * this.column})
+    window.jQuery('.picture--selected').removeClass('picture--selected')
+    window.jQuery('.matrix__column').eq(this.column).find('.matrix__row').eq(this.columns[this.column]).find('.picture').addClass('picture--selected').focus()
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -104,12 +104,12 @@ class Matrix extends React.Component {
   }
 
   componentDidMount() {
-    $(window).on('resize', this.alignMatrix)
-    $('.matrix__column').css({width: this.props.size + 'px'})
+    window.jQuery(window).on('resize', this.alignMatrix)
+    window.jQuery('.matrix__column').css({width: this.props.size + 'px'})
     this.alignMatrix()
     this.props.setCurrentTracks(this.props.artists[this.column].albums[this.columns[this.column]].tracks)
     this.animate()
-    $('body').keydown((e) => {
+    window.jQuery('body').keydown((e) => {
       var code = (e.keyCode ? e.keyCode : e.which);
       switch(code) {
         case 32:
@@ -151,7 +151,7 @@ class Matrix extends React.Component {
       }
     })
 
-    var columnSwipe = new Hammer($('.matrix__wrap')[0]);//, myOptions);
+    var columnSwipe = new Hammer(window.jQuery('.matrix__wrap')[0]);//, myOptions);
     columnSwipe.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
     columnSwipe.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
@@ -165,7 +165,7 @@ class Matrix extends React.Component {
         }
       }
       else {
-        $('.matrix').stop(true).css({'margin-left': newMarginLeft })
+        window.jQuery('.matrix').stop(true).css({'margin-left': newMarginLeft })
       }
     })
 
@@ -177,7 +177,7 @@ class Matrix extends React.Component {
     })
 
 
-    var rowSwipe = new Hammer($('.matrix__wrap')[0]);
+    var rowSwipe = new Hammer(window.jQuery('.matrix__wrap')[0]);
     rowSwipe.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
     rowSwipe.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
 
@@ -192,7 +192,7 @@ class Matrix extends React.Component {
       }
 
       else {
-        $('.matrix__column').eq(this.column).stop(true).css({'margin-top': newMarginTop})
+        window.jQuery('.matrix__column').eq(this.column).stop(true).css({'margin-top': newMarginTop})
       }
     })
 

@@ -15,15 +15,15 @@ class Playlist extends React.Component {
   }
 
   componentDidMount() {
-    $('.js-playlist').perfectScrollbar()
+    window.jQuery('.js-playlist').perfectScrollbar()
   }
 
   componentWillUpdate() {
-    $('.js-playlist').perfectScrollbar('destroy')
+    window.jQuery('.js-playlist').perfectScrollbar('destroy')
   }
 
   componentDidUpdate() {
-    $('.js-playlist').perfectScrollbar()
+    window.jQuery('.js-playlist').perfectScrollbar()
   }
 
   render() {

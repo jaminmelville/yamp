@@ -52,5 +52,5 @@ class Yamp extends React.Component {
 }
 ReactDOM.render(
   <Yamp/>,
-  $('#yamp')[0]
+  window.jQuery('#yamp')[0]
 )

@@ -45,7 +45,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
-    $('.background').append(renderer.domElement).addClass('background');
+    window.jQuery('.background').append(renderer.domElement).addClass('background');
 
     window.addEventListener('resize', onWindowResize, false);
 
@@ -277,9 +277,9 @@ var Matrix = function (_React$Component) {
   _createClass(Matrix, [{
     key: 'alignMatrix',
     value: function alignMatrix() {
-      $('.matrix').css({
-        'padding-top': ($(window).innerHeight() - this.props.size) / 2,
-        'padding-left': ($(window).width() - this.props.size) / 2
+      window.jQuery('.matrix').css({
+        'padding-top': (window.jQuery(window).innerHeight() - this.props.size) / 2,
+        'padding-left': (window.jQuery(window).width() - this.props.size) / 2
       });
     }
   }, {
@@ -289,13 +289,13 @@ var Matrix = function (_React$Component) {
 
       this.columns.forEach(function (row, column) {
         if (column !== _this2.column) {
-          $('.matrix__column').eq(column).stop(true).css({ 'margin-top': -_this2.props.size * row });
+          window.jQuery('.matrix__column').eq(column).stop(true).css({ 'margin-top': -_this2.props.size * row });
         }
       });
-      $('.matrix__column').eq(this.column).stop(true).animate({ 'margin-top': -this.props.size * this.columns[this.column] });
-      $('.matrix').stop(true).animate({ 'margin-left': -this.props.size * this.column });
-      $('.picture--selected').removeClass('picture--selected');
-      $('.matrix__column').eq(this.column).find('.matrix__row').eq(this.columns[this.column]).find('.picture').addClass('picture--selected').focus();
+      window.jQuery('.matrix__column').eq(this.column).stop(true).animate({ 'margin-top': -this.props.size * this.columns[this.column] });
+      window.jQuery('.matrix').stop(true).animate({ 'margin-left': -this.props.size * this.column });
+      window.jQuery('.picture--selected').removeClass('picture--selected');
+      window.jQuery('.matrix__column').eq(this.column).find('.matrix__row').eq(this.columns[this.column]).find('.picture').addClass('picture--selected').focus();
     }
   }, {
     key: 'shouldComponentUpdate',
@@ -362,12 +362,12 @@ var Matrix = function (_React$Component) {
     value: function componentDidMount() {
       var _this3 = this;
 
-      $(window).on('resize', this.alignMatrix);
-      $('.matrix__column').css({ width: this.props.size + 'px' });
+      window.jQuery(window).on('resize', this.alignMatrix);
+      window.jQuery('.matrix__column').css({ width: this.props.size + 'px' });
       this.alignMatrix();
       this.props.setCurrentTracks(this.props.artists[this.column].albums[this.columns[this.column]].tracks);
       this.animate();
-      $('body').keydown(function (e) {
+      window.jQuery('body').keydown(function (e) {
         var code = e.keyCode ? e.keyCode : e.which;
         switch (code) {
           case 32:
@@ -409,7 +409,7 @@ var Matrix = function (_React$Component) {
         }
       });
 
-      var columnSwipe = new Hammer($('.matrix__wrap')[0]); //, myOptions);
+      var columnSwipe = new Hammer(window.jQuery('.matrix__wrap')[0]); //, myOptions);
       columnSwipe.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
       columnSwipe.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 
@@ -422,7 +422,7 @@ var Matrix = function (_React$Component) {
             _this3.moveToColumn(newColumn);
           }
         } else {
-          $('.matrix').stop(true).css({ 'margin-left': newMarginLeft });
+          window.jQuery('.matrix').stop(true).css({ 'margin-left': newMarginLeft });
         }
       });
 
@@ -433,7 +433,7 @@ var Matrix = function (_React$Component) {
         }
       });
 
-      var rowSwipe = new Hammer($('.matrix__wrap')[0]);
+      var rowSwipe = new Hammer(window.jQuery('.matrix__wrap')[0]);
       rowSwipe.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
       rowSwipe.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
 
@@ -446,7 +446,7 @@ var Matrix = function (_React$Component) {
             _this3.moveToRow(_this3.column, newRow);
           }
         } else {
-          $('.matrix__column').eq(_this3.column).stop(true).css({ 'margin-top': newMarginTop });
+          window.jQuery('.matrix__column').eq(_this3.column).stop(true).css({ 'margin-top': newMarginTop });
         }
       });
 
@@ -509,7 +509,7 @@ var Column = function (_React$Component) {
       var rows = this.props.artist.albums.map(function (album, key) {
         var onClick = function onClick() {
           _this2.props.moveToRow(key);
-          $('.tracks').toggleClass('hide-for-small-only');
+          window.jQuery('.tracks').toggleClass('hide-for-small-only');
         };
         return React.createElement(Row, { album: album, key: key, onClick: onClick });
       });
@@ -594,17 +594,17 @@ var Tracks = function (_React$Component) {
   _createClass(Tracks, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      $('.js-tracklist').perfectScrollbar();
+      window.jQuery('.js-tracklist').perfectScrollbar();
     }
   }, {
     key: 'componentWillUpdate',
     value: function componentWillUpdate() {
-      $('.js-tracklist').perfectScrollbar('destroy');
+      window.jQuery('.js-tracklist').perfectScrollbar('destroy');
     }
   }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      $('.js-tracklist').perfectScrollbar();
+      window.jQuery('.js-tracklist').perfectScrollbar();
     }
   }, {
     key: 'render',
@@ -739,17 +739,17 @@ var Playlist = function (_React$Component) {
   _createClass(Playlist, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      $('.js-playlist').perfectScrollbar();
+      window.jQuery('.js-playlist').perfectScrollbar();
     }
   }, {
     key: 'componentWillUpdate',
     value: function componentWillUpdate() {
-      $('.js-playlist').perfectScrollbar('destroy');
+      window.jQuery('.js-playlist').perfectScrollbar('destroy');
     }
   }, {
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      $('.js-playlist').perfectScrollbar();
+      window.jQuery('.js-playlist').perfectScrollbar();
     }
   }, {
     key: 'render',
@@ -868,8 +868,8 @@ var Controls = function (_React$Component) {
     value: function componentDidMount() {
       var _this3 = this;
 
-      $('.controls .progress').click(function (e) {
-        var time = e.offsetX / $('.controls .progress').width() * _this3.props.track.duration;
+      window.jQuery('.controls .progress').click(function (e) {
+        var time = e.offsetX / window.jQuery('.controls .progress').width() * _this3.props.track.duration;
         socket.emit('remote', {
           command: 'seek',
           position: time
@@ -927,14 +927,14 @@ var Controls = function (_React$Component) {
   }, {
     key: 'toggleTracks',
     value: function toggleTracks() {
-      $('.side-bar--left').toggleClass('show-for-large');
-      $('.side-bar--right').addClass('show-for-large');
+      window.jQuery('.side-bar--left').toggleClass('show-for-large');
+      window.jQuery('.side-bar--right').addClass('show-for-large');
     }
   }, {
     key: 'togglePlaylist',
     value: function togglePlaylist() {
-      $('.side-bar--right').toggleClass('show-for-large');
-      $('.side-bar--left').addClass('show-for-large');
+      window.jQuery('.side-bar--right').toggleClass('show-for-large');
+      window.jQuery('.side-bar--left').addClass('show-for-large');
     }
   }, {
     key: 'render',
@@ -1047,4 +1047,4 @@ var Yamp = function (_React$Component) {
   return Yamp;
 }(React.Component);
 
-ReactDOM.render(React.createElement(Yamp, null), $('#yamp')[0]);
+ReactDOM.render(React.createElement(Yamp, null), window.jQuery('#yamp')[0]);

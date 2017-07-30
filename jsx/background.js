@@ -43,7 +43,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer();
     renderer.setSize( window.innerWidth, window.innerHeight );
-    $('.background').append(renderer.domElement).addClass('background');
+    window.jQuery('.background').append(renderer.domElement).addClass('background');
 
     window.addEventListener( 'resize', onWindowResize, false );
 

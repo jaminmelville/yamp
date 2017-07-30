@@ -15,15 +15,15 @@ class Tracks extends React.Component {
   }
 
   componentDidMount() {
-    $('.js-tracklist').perfectScrollbar()
+    window.jQuery('.js-tracklist').perfectScrollbar()
   }
 
   componentWillUpdate() {
-    $('.js-tracklist').perfectScrollbar('destroy')
+    window.jQuery('.js-tracklist').perfectScrollbar('destroy')
   }
 
   componentDidUpdate() {
-    $('.js-tracklist').perfectScrollbar()
+    window.jQuery('.js-tracklist').perfectScrollbar()
   }
 
   render() {

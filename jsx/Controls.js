@@ -50,8 +50,8 @@ class Controls extends React.Component {
   }
 
   componentDidMount() {
-    $('.controls .progress').click((e) => {
-      var time = e.offsetX / $('.controls .progress').width() * this.props.track.duration
+    window.jQuery('.controls .progress').click((e) => {
+      var time = e.offsetX / window.jQuery('.controls .progress').width() * this.props.track.duration
       socket.emit('remote', {
         command: 'seek',
         position: time
@@ -102,13 +102,13 @@ class Controls extends React.Component {
   }
 
   toggleTracks() {
-    $('.side-bar--left').toggleClass('show-for-large')
-    $('.side-bar--right').addClass('show-for-large')
+    window.jQuery('.side-bar--left').toggleClass('show-for-large')
+    window.jQuery('.side-bar--right').addClass('show-for-large')
   }
 
   togglePlaylist() {
-    $('.side-bar--right').toggleClass('show-for-large')
-    $('.side-bar--left').addClass('show-for-large')
+    window.jQuery('.side-bar--right').toggleClass('show-for-large')
+    window.jQuery('.side-bar--left').addClass('show-for-large')
   }
 
   render() {
