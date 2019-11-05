@@ -2,9 +2,9 @@ version: '3.7'
 
 services:
   node:
-    image: "node:11"
+    image: "node:10"
     working_dir: /code
-    command: bash -c "node main.js"
+    command: bash -c "(cd programs/server && npm install) && node main.js"
     restart: always
     environment:
       ROOT_URL: ${ROOT_URL}
@@ -13,7 +13,12 @@ services:
     ports:
       - "${WEB_PORT}:80"
     volumes:
-      - ./build:/code
+      - ./build/bundle:/code
   db:
     image: mongo
     restart: always
+    volumes:
+      - db:/data/db
+
+volumes:
+  db:

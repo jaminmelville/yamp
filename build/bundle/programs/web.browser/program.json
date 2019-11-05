@@ -1,0 +1,461 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "b50f33e91bd19cf234732509ff9e9280792fcd4e.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/b50f33e91bd19cf234732509ff9e9280792fcd4e.js?meteor_js_resource=true",
+      "size": 1040841,
+      "hash": "b50f33e91bd19cf234732509ff9e9280792fcd4e"
+    },
+    {
+      "path": "b50f33e91bd19cf234732509ff9e9280792fcd4e.stats.json",
+      "where": "client",
+      "type": "json",
+      "cacheable": true,
+      "url": "/b50f33e91bd19cf234732509ff9e9280792fcd4e.stats.json?meteor_js_resource=true",
+      "size": 42857,
+      "hash": "927be6966c95388075b4ab133aa01e64809d1a06"
+    },
+    {
+      "path": "cc4b2aef2197296561f6f17505b301395938205f.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/cc4b2aef2197296561f6f17505b301395938205f.css?meteor_css_resource=true",
+      "size": 45317,
+      "hash": "cc4b2aef2197296561f6f17505b301395938205f"
+    },
+    {
+      "path": "packages/es5-shim/es5-shim-sham.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/es5-shim/es5-shim-sham.js",
+      "size": 107174,
+      "hash": "c75e7bf8f84078ec1aac4edd37d060bb60ef8fc2"
+    },
+    {
+      "path": "packages/es5-shim/es5-shim-sham.min.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/es5-shim/es5-shim-sham.min.js",
+      "size": 27347,
+      "hash": "f611834e690a71f04d03591a455670d90218faaa"
+    },
+    {
+      "path": "packages/oauth/end_of_popup_response.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/oauth/end_of_popup_response.js",
+      "size": 1137,
+      "hash": "8a36abddc07778ebcf5db6253f08bd2b63d02c63"
+    },
+    {
+      "path": "packages/oauth/end_of_redirect_response.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/oauth/end_of_redirect_response.js",
+      "size": 356,
+      "hash": "db42ae47cb556ec736c5b7b1cee4cfbed3f8abf6"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 165742,
+      "hash": "5e3a1a9b72af1d842682f7e0a5c305922c583e3f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 444379,
+      "hash": "2958ef6f1890fda3f47468dedc70c2e1b2dd9511"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 165548,
+      "hash": "dbaed61bd8235d7e12522b21ce66fb90a4f9740d"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 98024,
+      "hash": "951644ff8c02065fd58f609d142e45daaaa5370f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 77160,
+      "hash": "a34ffd10b2a49d55d6247e351520ffdf556e0bb1"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 134808,
+      "hash": "cd12480a6626f5faf89ddd7ebb00edf64059498d"
+    },
+    {
+      "path": "app/android-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-144x144.png",
+      "size": 8087,
+      "hash": "e7ac581432c0461d3d28069cf51d87d8e5850c25"
+    },
+    {
+      "path": "app/android-icon-192x192.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-192x192.png",
+      "size": 10580,
+      "hash": "9cd9e1aaa08af735738f7e49cd1b719d462f9c5f"
+    },
+    {
+      "path": "app/android-icon-36x36.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-36x36.png",
+      "size": 1698,
+      "hash": "bfc044aa1fafcf1e6276f2710c47e29a83c31f90"
+    },
+    {
+      "path": "app/android-icon-48x48.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-48x48.png",
+      "size": 2037,
+      "hash": "c0bc48db5ffaba2b0e47d53e77e602a2db5f4331"
+    },
+    {
+      "path": "app/android-icon-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-72x72.png",
+      "size": 3101,
+      "hash": "31762a03be5fa622418122daea20f8994811e4c9"
+    },
+    {
+      "path": "app/android-icon-96x96.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/android-icon-96x96.png",
+      "size": 4169,
+      "hash": "23ad74840c44184c5fbf2df783a28989de68340d"
+    },
+    {
+      "path": "app/apple-icon-114x114.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-114x114.png",
+      "size": 5267,
+      "hash": "cbe4528554d4c799b2aab64332e8b8ebdca194bf"
+    },
+    {
+      "path": "app/apple-icon-120x120.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-120x120.png",
+      "size": 5642,
+      "hash": "87979517e9841d92a7f1cecac83c1e12143120c2"
+    },
+    {
+      "path": "app/apple-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-144x144.png",
+      "size": 8087,
+      "hash": "e7ac581432c0461d3d28069cf51d87d8e5850c25"
+    },
+    {
+      "path": "app/apple-icon-152x152.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-152x152.png",
+      "size": 8687,
+      "hash": "5681e6d23095d2f1367cc74c6d5390e29e8ebf9b"
+    },
+    {
+      "path": "app/apple-icon-180x180.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-180x180.png",
+      "size": 11924,
+      "hash": "d5dc1bdf8fecd7deedde5f71b4d33243980ff9c9"
+    },
+    {
+      "path": "app/apple-icon-57x57.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-57x57.png",
+      "size": 2538,
+      "hash": "6689f6e4096b5b08011d234186cb90ca6798a899"
+    },
+    {
+      "path": "app/apple-icon-60x60.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-60x60.png",
+      "size": 2527,
+      "hash": "e9e25af2fa2b1264819f382e983ca88e97a12b51"
+    },
+    {
+      "path": "app/apple-icon-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-72x72.png",
+      "size": 3101,
+      "hash": "31762a03be5fa622418122daea20f8994811e4c9"
+    },
+    {
+      "path": "app/apple-icon-76x76.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-76x76.png",
+      "size": 3294,
+      "hash": "6f7884bd8329c94ca5cd8711904cbeecb56a6301"
+    },
+    {
+      "path": "app/apple-icon-precomposed.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon-precomposed.png",
+      "size": 11154,
+      "hash": "eea243605734cd063efaf193b865b06f838e5415"
+    },
+    {
+      "path": "app/apple-icon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/apple-icon.png",
+      "size": 11154,
+      "hash": "eea243605734cd063efaf193b865b06f838e5415"
+    },
+    {
+      "path": "app/browserconfig.xml",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/browserconfig.xml",
+      "size": 281,
+      "hash": "0e0d06e4f87cd44f02aaa8d84d74ad0478cb7b0e"
+    },
+    {
+      "path": "app/favicon-16x16.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon-16x16.png",
+      "size": 1260,
+      "hash": "631b57330bee57a1797dec78c715cb9acac4a8a6"
+    },
+    {
+      "path": "app/favicon-32x32.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon-32x32.png",
+      "size": 1938,
+      "hash": "b65e38e69063f07dc41601849def87d1fe094b3f"
+    },
+    {
+      "path": "app/favicon-96x96.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon-96x96.png",
+      "size": 4169,
+      "hash": "23ad74840c44184c5fbf2df783a28989de68340d"
+    },
+    {
+      "path": "app/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/favicon.ico",
+      "size": 1150,
+      "hash": "e57b9d315406ed9cce52b8624e48d357891a4f81"
+    },
+    {
+      "path": "app/manifest.json",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/manifest.json",
+      "size": 720,
+      "hash": "d103f4e3e3187d0d40a11d08e2483ac2e4605bc0"
+    },
+    {
+      "path": "app/ms-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/ms-icon-144x144.png",
+      "size": 8087,
+      "hash": "e7ac581432c0461d3d28069cf51d87d8e5850c25"
+    },
+    {
+      "path": "app/ms-icon-150x150.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/ms-icon-150x150.png",
+      "size": 8623,
+      "hash": "f9c66d233437fa1b4a2af2ba681f751c9048f1ca"
+    },
+    {
+      "path": "app/ms-icon-310x310.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/ms-icon-310x310.png",
+      "size": 28162,
+      "hash": "773dbdc6bdd3e3090ca31edbd64e41fcbb257810"
+    },
+    {
+      "path": "app/ms-icon-70x70.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/ms-icon-70x70.png",
+      "size": 3035,
+      "hash": "cc11dc28d4e43dbb96e6a84bd47c9d1c027cda2b"
+    },
+    {
+      "path": "app/share.jpg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/share.jpg",
+      "size": 49078,
+      "hash": "ecbf1ceed81fadc544c581cfc16bc207000e0287"
+    },
+    {
+      "path": "app/fonts/GeosansLight.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/GeosansLight.eot",
+      "size": 50138,
+      "hash": "e5e1038fd602b82f0354e2579bd7a1dcc4485c6a"
+    },
+    {
+      "path": "app/fonts/GeosansLight.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/GeosansLight.ttf",
+      "size": 49968,
+      "hash": "69169906904b868e5ef72fdc52d36899a31333d7"
+    },
+    {
+      "path": "app/fonts/GeosansLight.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/GeosansLight.woff",
+      "size": 26744,
+      "hash": "9ae10c1fd020c4074fea4a3543794525052d67ac"
+    },
+    {
+      "path": "app/fonts/Helvetica.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Helvetica.eot",
+      "size": 85184,
+      "hash": "854fb60daac26d2c0a8c842471075f50d3bc2396"
+    },
+    {
+      "path": "app/fonts/Helvetica.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Helvetica.ttf",
+      "size": 84976,
+      "hash": "e7eb9fa3729aad119e9d4b0b368aecbb960380e4"
+    },
+    {
+      "path": "app/fonts/Helvetica.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/Helvetica.woff",
+      "size": 41604,
+      "hash": "c52edb896f147f074b30328121d2f67da7d7a805"
+    },
+    {
+      "path": "app/fonts/SimplePrint-Regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/SimplePrint-Regular.eot",
+      "size": 87678,
+      "hash": "26bf654ff89a35f006770228d00ed0beb38baa5b"
+    },
+    {
+      "path": "app/fonts/SimplePrint-Regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/SimplePrint-Regular.ttf",
+      "size": 87488,
+      "hash": "c777ff1bd700d50a6b04b5520d6f52e093112107"
+    },
+    {
+      "path": "app/fonts/SimplePrint-Regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/fonts/SimplePrint-Regular.woff",
+      "size": 35956,
+      "hash": "9eaacb2ba6085f2d0ec3889c6cdfd5ea961b02e0"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "733d218f61580dd50d12bbe810a8fb2282f89609"
+    }
+  ]
+}
