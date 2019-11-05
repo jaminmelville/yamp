@@ -1,0 +1,36 @@
+@import 'reset';
+@import '{}/imports/ui/scss/variables';
+@import '{}/imports/ui/scss/fonts';
+@import '{}/imports/ui/components/app';
+@import '{}/imports/ui/components/AddModal/add-modal';
+@import '{}/imports/ui/components/Button/button';
+@import '{}/imports/ui/components/Column/column';
+@import '{}/imports/ui/components/Controls/controls';
+@import '{}/imports/ui/components/Cover/cover';
+@import '{}/imports/ui/components/Login/login';
+@import '{}/imports/ui/components/Matrix/matrix';
+@import '{}/imports/ui/components/Title/title';
+@import '{}/imports/ui/components/Track/track';
+@import '{}/imports/ui/components/Tracks/tracks';
+@import '{}/imports/ui/components/Video/video';
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  &.busy {
+    cursor: wait;
+  }
+}
+
+.app {
+	background-color: black;
+}

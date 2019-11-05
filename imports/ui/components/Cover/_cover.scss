@@ -1,0 +1,32 @@
+.cover {
+  padding: 10%;
+  opacity: 0.7;
+
+  &__image {
+    background-color: gray;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  &__text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 2em;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &--focused {
+    opacity: 1;
+    padding: 5%;
+    .cover__image, .cover__text {
+      border: 1px solid $primary-color;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.tracks {
+  color: $off-white;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+
+  &--left {
+    left: 0.25rem;
+
+    .tracks__button {
+      margin-right: 0.5em;
+    }
+  }
+
+  &--right {
+    right: 0.25rem;
+    text-align: right;
+
+    .tracks__button {
+      margin-left: 0.5em;
+    }
+
+    .tracks__item {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__heading {
+    line-height: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: all;
+    padding: 0.25rem 0;
+    width: 200px;
+    border-bottom: 1px solid gray;
+  }
+
+  &__sub-heading {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    pointer-events: all;
+    padding: 0.25rem 0;
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    cursor: pointer;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    width: 200px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__name {
+    color: lighten(black, 75);
+    pointer-events: all;
+    transition: color 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover {
+      color: $primary-color;
+    }
+    &--active {
+      color: $primary-color;
+    }
+  }
+
+  &__button {
+    pointer-events: all;
+    cursor: pointer;
+    transition: color 0.5s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  @media (max-width: 600px) {
+  & {
+      display: none;
+    }
+  }
+
+}

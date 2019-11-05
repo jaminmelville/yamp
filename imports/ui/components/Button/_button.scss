@@ -1,0 +1,21 @@
+.button {
+  text-align: center;
+  margin: 0.5rem;
+  background-color: darken($primary-color, 10);
+  color: $off-white;
+  display: inline-block;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border-radius: 5px;
+  font-size: 1.3em;
+	font-family: 'Helvetica';
+
+  &--large {
+    font-size: 2em;
+  }
+
+  &:hover {
+    background-color: darken($primary-color, 20);
+  }
+}

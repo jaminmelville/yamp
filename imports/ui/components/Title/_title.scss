@@ -1,0 +1,14 @@
+.title {
+  position: absolute;
+  top: 0.3em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  pointer-events: none;
+	font-family: 'GeosansLight';  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

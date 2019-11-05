@@ -1,0 +1,13 @@
+.app {
+  &__ui {
+    opacity: 1;
+    transition: opacity 1s;
+
+    &--faded {
+      opacity: 0;
+      > * {
+        pointer-events: none;
+      }
+    }
+  }
+}

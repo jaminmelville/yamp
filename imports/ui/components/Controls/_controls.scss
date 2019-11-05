@@ -1,0 +1,22 @@
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__button {
+    border: 1px solid $off-white;
+    color: $off-white;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.5em;
+    transition: color 0.5s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

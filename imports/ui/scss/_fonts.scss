@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Simple Print';
+	src: url('/fonts/SimplePrint-Regular.eot');
+	src: url('/fonts/SimplePrint-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/SimplePrint-Regular.woff') format('woff'),
+		url('/fonts/SimplePrint-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GeosansLight';
+	src: url('/fonts/GeosansLight.eot');
+	src: url('/fonts/GeosansLight.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/GeosansLight.woff') format('woff'),
+		url('/fonts/GeosansLight.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('/fonts/Helvetica.eot');
+	src: url('/fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Helvetica.woff') format('woff'),
+		url('/fonts/Helvetica.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

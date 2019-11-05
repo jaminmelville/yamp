@@ -1,0 +1,40 @@
+.login {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+  background: linear-gradient(to bottom right, $off-white, lighten($primary-color, 35));
+  color: $off-black;
+
+  &__title {
+    font-size: 10em;
+  	font-family: 'GeosansLight';
+  }
+
+  &__subtitle {
+    font-family: 'GeosansLight';
+    margin-top: -1em;
+    margin-left: 2.4em;
+    font-size: 0.85em;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-top: 0.5rem;
+    margin-left: 6.8rem;
+  }
+
+	&__contact {
+		color: $off-black;
+		position: absolute;
+		bottom: 0.25rem;
+		right: 0.25rem;
+		text-decoration: none;
+		transition: color 0.5s;
+		&:hover {
+			color: darken($primary-color, 20);
+		}
+	}
+}

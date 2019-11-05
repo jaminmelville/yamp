@@ -1,0 +1,8 @@
+.column {
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  &--transitions {
+    transition: margin-top 0.25s;
+  }
+}
